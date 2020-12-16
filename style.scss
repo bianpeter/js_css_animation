@@ -4,39 +4,28 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #00bfa5;
-}
+body{ background-color: #00bfa5;}
 
-h1{
+h1,p{
   position: fixed;
   left: 50%; 
   top: 50%; 
   transform:rotate(0deg) translate(-50%, -50%);
   transform-origin: 0 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
   font-size: 48px;
 }
 
-p{
-  position: fixed;
-  left: 50%; 
-  top: 50%; 
-  transform: rotate(0deg) translate(-50%, -50%);
-  transform-origin: 0 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 48px;
-}
+p{font-weight: 100;}
+
+h1{font-weight: 900;}
 
 #root.clicked{
 
   p{
-    animation-name: pclicked;
     animation-duration: 3s;
     animation-direction: reverse;
-
+    animation-name: pclicked;
 
     @keyframes pclicked{
       0% {
@@ -49,10 +38,9 @@ p{
   }
 
   h1{
-    animation-name: h1clicked;
     animation-duration: 3s;
     animation-direction: reverse;
-
+    animation-name: h1clicked;
 
     @keyframes h1clicked{
       0% {

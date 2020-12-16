@@ -9,7 +9,7 @@ body {
   background-color: #00bfa5;
 }
 
-h1 {
+h1, p {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -18,29 +18,23 @@ h1 {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
   font-size: 48px;
 }
 
 p {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: rotate(0deg) translate(-50%, -50%);
-          transform: rotate(0deg) translate(-50%, -50%);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 48px;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 #root.clicked p {
-  -webkit-animation-name: pclicked;
-          animation-name: pclicked;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   animation-direction: reverse;
+  -webkit-animation-name: pclicked;
+          animation-name: pclicked;
 }
 
 @-webkit-keyframes pclicked {
@@ -66,11 +60,11 @@ p {
 }
 
 #root.clicked h1 {
-  -webkit-animation-name: h1clicked;
-          animation-name: h1clicked;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   animation-direction: reverse;
+  -webkit-animation-name: h1clicked;
+          animation-name: h1clicked;
 }
 
 @-webkit-keyframes h1clicked {
