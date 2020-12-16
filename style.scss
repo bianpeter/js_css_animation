@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #00bfa5;
+}
+
+h1{
+  position: fixed;
+  left: 50%; 
+  top: 50%; 
+  transform:rotate(0deg) translate(-50%, -50%);
+  transform-origin: 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+p{
+  position: fixed;
+  left: 50%; 
+  top: 50%; 
+  transform: rotate(0deg) translate(-50%, -50%);
+  transform-origin: 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 48px;
+}
+
+#root.clicked{
+
+  p{
+    animation-name: pclicked;
+    animation-duration: 3s;
+    animation-direction: reverse;
+
+
+    @keyframes pclicked{
+      0% {
+        transform: rotate(0deg) translate(-50%, -50%);
+      }
+      100% {
+        transform: rotate(360deg) translate(-50%, -50%);
+      }
+    }
+  }
+
+  h1{
+    animation-name: h1clicked;
+    animation-duration: 3s;
+    animation-direction: reverse;
+
+
+    @keyframes h1clicked{
+      0% {
+        transform: rotate(0deg) translate(-50%, -50%);
+      }
+      100% {
+        transform: rotate(-360deg) translate(-50%, -50%);
+      }
+    }
+  }
+}
